@@ -4,17 +4,13 @@ public class Boat {
     private String name;
     private int capacity;
 
-    public void setName(String name) {
+    public Boat(String name, int capacity){
         this.name = name;
+        this.capacity = capacity;
     }
     public String getVehicleName(){
         return this.name;
     }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-
     public int getVehicleCapacity(){
         return this.capacity;
     }
