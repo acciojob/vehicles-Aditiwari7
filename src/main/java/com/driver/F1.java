@@ -5,9 +5,6 @@ public class F1 extends Car {
     public F1(String name, boolean isManual) {
         super(name, isManual);
     }
-//    public String getName(){
-//        return getName();
-//    }
     public void accelerate(int rate){
         int newSpeed = 0;
         int curSpeed = getCurrentSpeed();
