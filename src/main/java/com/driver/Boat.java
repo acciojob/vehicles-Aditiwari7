@@ -2,11 +2,11 @@ package com.driver;
 
 public class Boat {
 
-    public void getVehicleName(){
-        System.out.println("BOAT");
+    public String getVehicleName(){
+        return "";
     }
 
-    public void getVehicleCapacity(){
-        System.out.println(100);
+    public int getVehicleCapacity(){
+        return 0;
     }
 }
