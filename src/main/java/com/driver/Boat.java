@@ -1,8 +1,8 @@
 package com.driver;
 
 public class Boat {
-    private String name;
-    private int capacity;
+    private String name = "";
+    private int capacity = 0;
 
     public void setVehicleName(String Name){
         this.name = Name;
