@@ -11,9 +11,7 @@ public class Vehicle {
         this.currentSpeed = 0;
         this.currentDirection = 0;
     }
-    public String getVehicleName(){
-        return this.name;
-    }
+
 
 
     public void steer(int direction){

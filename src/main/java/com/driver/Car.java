@@ -25,10 +25,6 @@ public class Car extends Vehicle {
         this.isManual = isManual;
     }
 
-    public int getVehicleCapacity(){
-        return this.seats;
-    }
-
     public void changeGear(int newGear){
         this.currentGear = newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
