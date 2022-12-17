@@ -1,12 +1,13 @@
 package com.driver;
 
 public class Boat {
-
+    String name = "boat";
+    int capacity = 100;
     public String getVehicleName(){
-        return "";
+        return this.name;
     }
 
     public int getVehicleCapacity(){
-        return 0;
+        return this.capacity;
     }
 }
