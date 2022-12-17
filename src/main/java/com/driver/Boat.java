@@ -1,4 +1,5 @@
 package com.driver;
+import java.lang.String;
 
 public class Boat {
     private String name;

@@ -58,7 +58,6 @@ public class Car extends Vehicle {
     }
 
     public String getName(){
-        Vehicle v = new Vehicle();
-        return v.getName();
+        return getName();
     }
 }

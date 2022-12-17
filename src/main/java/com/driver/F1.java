@@ -6,8 +6,7 @@ public class F1 extends Car {
         super(name, isManual);
     }
     public String getName(){
-        Vehicle v = new Vehicle();
-        return v.getName();
+        return getName();
     }
     public void accelerate(int rate){
         int newSpeed = 0; //set the value of new speed by using currentSpeed and rate
