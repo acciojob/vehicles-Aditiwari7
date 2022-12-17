@@ -12,10 +12,9 @@ public class Vehicle {
         this.currentDirection = 0;
     }
 
-    public String getVehicleName(){
+    public String getName(){
         return name;
     }
-
 
     public void steer(int direction){
         this.currentDirection = direction;
