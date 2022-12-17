@@ -14,7 +14,7 @@ public class Boat {
 //    public void setCapacity(int currentCapacity){
 //        this.capacity = currentCapacity;
 //    }
-    public int getCapacity(){
+    public int getVehicleCapacity(){
         return 1000;
     }
 }
