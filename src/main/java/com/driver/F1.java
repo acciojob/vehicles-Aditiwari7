@@ -3,24 +3,42 @@ package com.driver;
 public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
-        super(name, isManual);
+        super(name,4,4,6,isManual,"sport",5);
     }
     public void accelerate(int rate){
         int newSpeed = 0;
-        int curSpeed = getCurrentSpeed();
-        newSpeed = curSpeed + rate;
+        newSpeed = getCurrentSpeed() + rate;
         if(newSpeed == 0) {
             stop();
             changeGear(1);
         }
-        if(newSpeed > 0) {
+        if(newSpeed > 250 ){
             changeSpeed(newSpeed, getCurrentDirection());
-            if(newSpeed >= 1 && newSpeed <= 50) changeGear(1);
-            if(newSpeed >= 51 && newSpeed <= 100) changeGear(2);
-            if(newSpeed >= 101 && newSpeed <= 150) changeGear(3);
-            if(newSpeed >= 151 && newSpeed <= 200) changeGear(4);
-            if(newSpeed >= 201 && newSpeed <= 250) changeGear(5);
-            if(newSpeed <= 250) changeGear(6);
+            changeGear(6);
+        }
+        else if(newSpeed > 200 ){
+            changeSpeed(newSpeed, getCurrentDirection());
+            changeGear(5);
+        }
+        else if(newSpeed > 150 ){
+            changeSpeed(newSpeed, getCurrentDirection());
+            changeGear(4);
+        }
+        else if(newSpeed > 100 ){
+            changeSpeed(newSpeed, getCurrentDirection());
+            changeGear(3);
+        }
+        else if(newSpeed > 50 ){
+            changeSpeed(newSpeed, getCurrentDirection());
+            changeGear(2);
+        }
+        else if(newSpeed > 1 ){
+            changeSpeed(newSpeed, getCurrentDirection());
+            changeGear(1);
+        }
+        else if(newSpeed > 0) {
+            changeSpeed(newSpeed, getCurrentDirection());
+            changeGear(1);
         }
     }
 }
