@@ -12,33 +12,55 @@ public class F1 extends Car {
             stop();
             changeGear(1);
         }
-        if(newSpeed > 250 ){
-            changeSpeed(newSpeed, getCurrentDirection());
-            changeGear(6);
-        }
-        else if(newSpeed > 200 ){
-            changeSpeed(newSpeed, getCurrentDirection());
-            changeGear(5);
-        }
-        else if(newSpeed > 150 ){
-            changeSpeed(newSpeed, getCurrentDirection());
-            changeGear(4);
-        }
-        else if(newSpeed > 100 ){
-            changeSpeed(newSpeed, getCurrentDirection());
-            changeGear(3);
-        }
-        else if(newSpeed > 50 ){
-            changeSpeed(newSpeed, getCurrentDirection());
-            changeGear(2);
-        }
-        else if(newSpeed > 1 ){
-            changeSpeed(newSpeed, getCurrentDirection());
-            changeGear(1);
-        }
-        else if(newSpeed > 0) {
-            changeSpeed(newSpeed, getCurrentDirection());
-            changeGear(1);
+//        if(newSpeed > 250 ){
+//            changeSpeed(newSpeed, getCurrentDirection());
+//            changeGear(6);
+//        }
+//        else if(newSpeed > 200 ){
+//            changeSpeed(newSpeed, getCurrentDirection());
+//            changeGear(5);
+//        }
+//        else if(newSpeed > 150 ){
+//            changeSpeed(newSpeed, getCurrentDirection());
+//            changeGear(4);
+//        }
+//        else if(newSpeed > 100 ){
+//            changeSpeed(newSpeed, getCurrentDirection());
+//            changeGear(3);
+//        }
+//        else if(newSpeed > 50 ){
+//            changeSpeed(newSpeed, getCurrentDirection());
+//            changeGear(2);
+//        }
+//        else if(newSpeed > 1 ){
+//            changeSpeed(newSpeed, getCurrentDirection());
+//            changeGear(1);
+//        }
+        if(newSpeed > 0) {
+            if(newSpeed > 250 ){
+                changeSpeed(newSpeed, getCurrentDirection());
+                changeGear(6);
+            }
+            else if(newSpeed > 200 ){
+                changeSpeed(newSpeed, getCurrentDirection());
+                changeGear(5);
+            }
+            else if(newSpeed > 150 ){
+                changeSpeed(newSpeed, getCurrentDirection());
+                changeGear(4);
+            }
+            else if(newSpeed > 100 ){
+                changeSpeed(newSpeed, getCurrentDirection());
+                changeGear(3);
+            }
+            else if(newSpeed > 50 ){
+                changeSpeed(newSpeed, getCurrentDirection());
+                changeGear(2);
+            }
+            else{
+                changeSpeed(newSpeed, getCurrentDirection());
+                changeGear(1);
+            }
         }
     }
 }
